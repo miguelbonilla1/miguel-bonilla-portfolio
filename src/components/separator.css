@@ -1,0 +1,12 @@
+.svg-background {
+  position: absolute;
+  bottom: 0; /* O 'top: 0;' dependiendo de dónde lo quieras colocar */
+  left: 0;
+  width: 100%;
+  height: auto; /* Ajusta la altura según sea necesario */
+  z-index: 0;
+}
+
+section {
+  z-index: 1;
+}
