@@ -29,11 +29,12 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="lg:w-full lg:flex lg:items-center lg:justify-center order-1 lg:order-2">
-        <img
-          src={fotoPortafolio5}
-          alt="Foto de perfil"
-          className="p-0 lg:mr-10 rounded-full overflow-hidden h-[30vh] w-[30vh] md:h-[37vh] md:w-[48vh] lg:w-[vh] lg:h-[50vh] border-4 border-orange-700 border-opacity-90 shadow-[0px_0px_20px_10px_rgba(234,88,12,0.6)]"
-        />
+      <img
+  src={fotoPortafolio5}
+  alt="Foto de perfil"
+  className="rounded-full overflow-hidden h-[30vh] w-[30vh] md:h-[37vh] md:w-[37vh] lg:h-[45vh] lg:w-[45vh] border-4 border-orange-700 border-opacity-90 shadow-[0px_0px_20px_10px_rgba(234,88,12,0.6)] object-cover"
+/>
+
       </div>
     </section>
   );

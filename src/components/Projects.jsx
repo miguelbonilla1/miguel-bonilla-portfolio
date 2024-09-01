@@ -12,7 +12,10 @@ const Projects = () => {
       <h1 className="text-3xl font-bold text-center py-5 mb-6">Personal Projects</h1>
       <div className="w-full px-4 lg:max-w-5xl lg:mx-auto">
         {projectList.map((project, index) => (
-          <div key={index} className="w-full flex flex-col lg:flex-row lg:justify-center items-center mb-8">
+          <div 
+            key={index} 
+            className="w-full flex flex-col lg:flex-row lg:justify-center items-center mb-8 
+                       px-4 sm:px-6 md:px-8 lg:px-4 xl:px-0">
             <a href={project.url} className="block w-full lg:w-1/2 h-auto overflow-hidden rounded-lg hover:opacity-70 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
               <img 
                 src={project.imageUrl} 
