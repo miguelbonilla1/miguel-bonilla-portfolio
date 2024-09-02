@@ -3,8 +3,8 @@ import darkshape from '../images/darkshape.png';
 
 const Projects = () => {
   const projectList = [
-    { name: 'DarkShapeStudios', url: 'http://darkshapestudios.com', imageUrl: darkshape },
-    { name: 'Bot de discord', url: 'http://discordappMiguelBonilla.com', imageUrl: dcapp },
+    { name: 'DarkShapeStudios', url: 'https://www.darkshapestudios.com/', imageUrl: darkshape },
+    { name: 'Bot de discord', url: 'https://www.discordappMiguelBonilla.com', imageUrl: dcapp },
   ];
 
   return (
