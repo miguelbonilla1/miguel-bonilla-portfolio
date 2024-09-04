@@ -16,7 +16,7 @@ const HeroSection = () => {
         <h2 className="text-tertiary text-2xl lg:text-5xl font-bold">
           <span className="bg-gradient-to-r from-yellow-400 via-orange-500 to-purple-600 inline-block text-transparent bg-clip-text">Full Stack developer</span>
         </h2>
-        <div className="flex justify-center lg:justify-start items-center mt-5 lg:mt-14">
+        <div className="flex justify-center lg:justify-start items-center mt-5 lg:ml-2 lg:mt-14">
           <a href="https://www.linkedin.com/in/miguel-bonilla-4b7438285/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white mr-6">
             <FaLinkedin size={40} />
           </a>

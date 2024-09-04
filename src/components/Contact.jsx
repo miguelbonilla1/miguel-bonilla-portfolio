@@ -2,7 +2,7 @@
 
 const Contact = () => {
   return (
-    <div id="contact" className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white py-24 sm:py-32 px-6 sm:px-8">
+    <div id="contact" className=" min-h-[90vh] bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white py-24 sm:py-32 px-6 sm:px-8">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-10">¡Contáctame!</h2>
         <form action="#" method="POST" className="max-w-lg mx-auto">
