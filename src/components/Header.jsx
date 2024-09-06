@@ -23,24 +23,26 @@ const Header = () => {
           MB
         
         </a> */}
-        <img src={miguelLogo} alt="" className="pt-1 pl-2" style={{height: '38px'}}/>
+        <ScrollLink to="HeroSection" smooth={true} duration={500}>
+          <img src={miguelLogo} alt="" className=" cursor-pointer pt-1 pl-2 transition-transform transform hover:scale-105" style={{ height: '38px' }} />
+        </ScrollLink>
         <div className="hidden md:flex items-center space-x-4 pr-5 text-lg py-1">
-          <ScrollLink to="HeroSection" smooth={true} duration={500} className="cursor-pointer text-white hover:text-blue-600 transition duration-300 lg:pr-3" aria-label="Sobre mí">
-            Sobre mí
-          </ScrollLink>
+          {/* <ScrollLink to="HeroSection" smooth={true} duration={500} className="cursor-pointer text-white hover:text-blue-600 transition duration-300 lg:pr-3" aria-label="Sobre mí">
+              Sobre mí
+            </ScrollLink> */}
           <ScrollLink to="projects" smooth={true} duration={500} className="cursor-pointer text-white hover:text-blue-600 transition duration-300 lg:pr-3" aria-label="Proyectos">
-            Proyectos
+            Projects
           </ScrollLink>
           <ScrollLink to="skills" smooth={true} duration={500} className="cursor-pointer text-white hover:text-blue-600 transition duration-300 lg:pr-3" aria-label="Skills">
             Skills
           </ScrollLink>
           <ScrollLink to="contact" smooth={true} duration={500} className="cursor-pointer text-white hover:text-blue-600 transition duration-300 lg:pr-10" aria-label="Contacto">
-            Contacto
+            Contact
           </ScrollLink>
         </div>
-        <button 
-          className="pr-2 md:hidden text-white dark:text-white hover:text-white transition duration-300" 
-          onClick={() => setIsMenuOpen(!isMenuOpen)} 
+        <button
+          className="pr-2 md:hidden text-white dark:text-white hover:text-white transition duration-300"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
           <FontAwesomeIcon icon={faBars} />

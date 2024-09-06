@@ -48,7 +48,7 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-1 gap-10">
         {/* Sección de Motivación */}
         <div className="text-center lg:text-left space-y-4">
-          <h2 className="text-4xl font-bold mb-4">¡Hablemos de tu próximo proyecto!</h2>
+          <h2 className="text-4xl font-bold mb-4">Lets talk about your next project!</h2>
 
           <p className="text-lg font-bold"></p>
         </div>

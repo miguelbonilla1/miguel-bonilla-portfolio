@@ -9,7 +9,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="h-full flex flex-col justify-center items-center bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white dark:text-gray-200 relative">
-      <h1 className="text-3xl font-bold text-center py-5 mb-6">Personal Projects</h1>
+      <h1 className="text-3xl font-bold text-center py-5 mb-6"> Projects</h1>
       <div className="w-full px-1 lg:max-w-5xl lg:mx-auto">
         {projectList.map((project, index) => (
           <div
