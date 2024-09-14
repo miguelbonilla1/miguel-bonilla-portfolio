@@ -47,7 +47,7 @@ const Projects = () => {
               <img
                 src={project.imageUrl}
                 alt={project.name}
-                className="w-full h-64 object-cover"
+                className="w-full h-72 object-cover"
               />
             </a>
             <div className="w-full lg:w-1/2 mt-4 lg:mt-0 lg:pl-10 text-center lg:text-left">
@@ -69,7 +69,7 @@ const Projects = () => {
                   <img
                     src={project.gifUrl}
                     alt={`${project.name} demo`}
-                    className="w-72 h-auto rounded-lg shadow-lg cursor-pointer"
+                    className="w-72 h-40 rounded-lg shadow-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 hover:opacity-80"
                     onClick={() => openModal(project.gifUrl)}
                   />
                 </div>
