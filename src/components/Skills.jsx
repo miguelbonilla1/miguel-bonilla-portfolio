@@ -12,7 +12,7 @@ import { SiTypescript } from "react-icons/si";
 const Skills = () => {
   return (
     <section id="skills" className="w-full min-h-screen px-1 bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white dark:text-gray-200 flex flex-col justify-center items-center overflow-hidden">
-      <h1 className="text-3xl font-bold py-4 text-center mt-10">Habilidades</h1>
+      <h1 className="text-3xl font-bold py-4 text-center mt-10">Skills</h1>
       <div className="w-full flex flex-col lg:flex-row py-2 items-start justify-center">
         {/* Front-end Skills */}
         <div className="pt-3 w-full lg:w-auto p-2 flex flex-col items-center lg:mr-8">

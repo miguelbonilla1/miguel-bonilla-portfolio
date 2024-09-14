@@ -17,7 +17,7 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 bg-gray-900 text-white dark:text-gray-200 shadow-md opacity-90 max-h-[13vh]">
+    <header className="font-sans sticky top-0 z-50 bg-gray-900 text-white dark:text-gray-200 shadow-md opacity-90 max-h-[13vh]">
       <nav className="container mx-auto p-3 flex justify-between items-center lg:pr-10">
         {/* Logo */}
         <ScrollLink to="HeroSection" smooth={true} duration={500}>

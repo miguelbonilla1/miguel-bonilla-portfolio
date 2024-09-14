@@ -26,7 +26,8 @@ const Projects = () => {
     },
     {
       name: 'Bot asistente de discord',
-      url: 'you can test the bot in this server https://discord.gg/SCbZaDek or just invite the bot to your own server with this link https://discord.com/oauth2/authorize?client_id=1280377060455612457',
+      url: 'https://discord.gg/SCbZaDek',
+      // inviteUrl: 'https://discord.com/oauth2/authorize?client_id=1280377060455612457', // Agregamos el segundo enlace aquí
       imageUrl: dcapp,
       description: 'The Discord Bot provides real-time cryptocurrency quotes, using Discord.js, Node.js, and the CoinMarketCap API.',
       gifUrl: dcappGif, // Añade el GIF al objeto del proyecto del bot
@@ -40,9 +41,9 @@ const Projects = () => {
         {projectList.map((project, index) => (
           <div
             key={index}
-            className="w-full flex flex-col lg:flex-row lg:justify-start lg:items-start items-center mb-8 px-4 sm:px-6 md:px-8 lg:px-4 xl:px-0" // Alineamos al inicio
+            className="w-full flex flex-col lg:flex-row lg:justify-start lg:items-start items-center mb-8 px-4 sm:px-6 md:px-8 lg:px-4 xl:px-0"
           >
-            <a href={project.url} className="block w-full lg:w-1/2 h-auto overflow-hidden rounded-lg hover:opacity-70 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            <a href={project.url} target="_blank" rel="noopener noreferrer" className="block w-full lg:w-1/2 h-auto overflow-hidden rounded-lg hover:opacity-70 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
               <img
                 src={project.imageUrl}
                 alt={project.name}
@@ -52,7 +53,16 @@ const Projects = () => {
             <div className="w-full lg:w-1/2 mt-4 lg:mt-0 lg:pl-10 text-center lg:text-left">
               <h3 className="font-bold text-lg cursor-pointer hover:opacity-90 hover:underline mb-2">{project.name}</h3>
               <p className="text-sm mb-2">{project.description}</p>
-              <p className="text-sm text-gray-400">{project.url}</p>
+              <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:underline">
+                {project.url}
+              </a>
+              <br />
+              {/* Enlace adicional para invitar al bot */}
+              {project.inviteUrl && (
+                <a href={project.inviteUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:underline">
+                  Invite the bot to your server
+                </a>
+              )}
               {/* Si el proyecto tiene un GIF, se muestra debajo */}
               {project.gifUrl && (
                 <div className="mt-4 flex justify-center lg:justify-start">
@@ -60,7 +70,7 @@ const Projects = () => {
                     src={project.gifUrl}
                     alt={`${project.name} demo`}
                     className="w-72 h-auto rounded-lg shadow-lg cursor-pointer"
-                    onClick={() => openModal(project.gifUrl)} // Al hacer clic, abre el modal
+                    onClick={() => openModal(project.gifUrl)}
                   />
                 </div>
               )}

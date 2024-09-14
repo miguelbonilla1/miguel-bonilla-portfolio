@@ -1,5 +1,6 @@
-import { FaLinkedin, FaGithub, FaEnvelope, FaFileAlt } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import fotoPortafolio5 from '../images/fotoPortafolio5.png';
+import { Link as ScrollLink } from 'react-scroll';
 
 const HeroSection = () => {
   return (
@@ -14,27 +15,32 @@ const HeroSection = () => {
         <h2 className="text-tertiary text-2xl lg:text-5xl font-bold">
           <span className="bg-gradient-to-r from-yellow-400 via-orange-500 to-purple-600 inline-block text-transparent bg-clip-text">Full Stack developer</span>
         </h2>
-        <div className="flex justify-center lg:justify-start items-center mt-5 lg:ml-2 lg:mt-14">
+        <div className="flex justify-center lg:justify-start items-center mt-5 lg:ml-2 lg:mt-10">
           <a href="https://www.linkedin.com/in/miguel-bonilla-4b7438285/" target="_blank" rel="noopener noreferrer" className="text-white transition-transform transform hover:scale-105 mr-6">
             <FaLinkedin size={45} />
           </a>
           <a href="https://github.com/miguelbonilla1" target="_blank" rel="noopener noreferrer" className="text-white transition-transform transform hover:scale-105 mr-6">
             <FaGithub size={48} />
           </a>
-          <a href="mailto:miguelbonilla1886@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white transition-transform transform hover:scale-105 mr-6">
-            <FaEnvelope size={45} />
-          </a>
-
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-white transition-transform transform hover:scale-105"
+          >
+            <FaEnvelope className="ml-2" size={45} />
+          </ScrollLink>
         </div>
       </div>
       <div className="lg:w-full lg:flex lg:items-center lg:justify-center order-1 lg:order-2">
         <img
           src={fotoPortafolio5}
           alt="Foto de perfil"
-          className="rounded-full overflow-hidden h-[30vh] w-[30vh] md:h-[37vh] md:w-[37vh] lg:h-[45vh] lg:w-[45vh] border-4 border-orange-700 border-opacity-90 shadow-[0px_0px_20px_10px_rgba(234,88,12,0.6)] object-cover"
+          className="rounded-full overflow-hidden h-[35vh] w-[35vh] md:h-[40vh] md:w-[40vh] lg:h-[45vh] lg:w-[45vh] border-4 border-orange-700 border-opacity-90 shadow-[0px_0px_20px_10px_rgba(234,88,12,0.6)] object-cover"
+          style={{ imageRendering: 'crisp-edges', objectFit: 'cover' }} // Mejorar la calidad visual
         />
       </div>
-    </section >
+    </section>
   );
 };
 
