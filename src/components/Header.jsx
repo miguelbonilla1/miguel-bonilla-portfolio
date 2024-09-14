@@ -45,8 +45,8 @@ const Header = () => {
           </ScrollLink>
           {/* Ajustamos el texto para diferentes resoluciones */}
           <a
-            href="/CurriculoDevEspañol.docx"
-            download="Miguel_Bonilla_CV"
+            href="/ResumeMiguelBonilla.docx"
+            download="CV_MiguelBonilla"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center transition-transform transform hover:scale-105"
