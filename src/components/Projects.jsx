@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import dcapp from '../images/dcapp.jpeg';
 import darkshape from '../images/darkshape.png';
-import dcappGif from '../images/bot-testing.gif'; // Importa el GIF del Discord Bot
+import dcappGif from '../images/bot-testing.gif';
 
 const Projects = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para el modal
-  const [selectedGif, setSelectedGif] = useState(null); // Estado para el GIF seleccionado
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal
+  const [selectedGif, setSelectedGif] = useState(null); // State for Gif Selected
 
   const openModal = (gifUrl) => {
     setSelectedGif(gifUrl);
@@ -27,10 +27,9 @@ const Projects = () => {
     {
       name: 'Bot asistente de discord',
       url: 'https://discord.gg/SCbZaDek',
-      // inviteUrl: 'https://discord.com/oauth2/authorize?client_id=1280377060455612457', // Agregamos el segundo enlace aquí
       imageUrl: dcapp,
       description: 'The Discord Bot provides real-time cryptocurrency quotes, using Discord.js, Node.js, and the CoinMarketCap API.',
-      gifUrl: dcappGif, // Añade el GIF al objeto del proyecto del bot
+      gifUrl: dcappGif,
     },
   ];
 
@@ -57,13 +56,13 @@ const Projects = () => {
                 {project.url}
               </a>
               <br />
-              {/* Enlace adicional para invitar al bot */}
+              {/* Invite Bot */}
               {project.inviteUrl && (
                 <a href={project.inviteUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:underline">
                   Invite the bot to your server
                 </a>
               )}
-              {/* Si el proyecto tiene un GIF, se muestra debajo */}
+              {/* Gif */}
               {project.gifUrl && (
                 <div className="mt-4 flex justify-center lg:justify-start">
                   <img

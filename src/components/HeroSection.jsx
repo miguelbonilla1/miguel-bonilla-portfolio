@@ -36,8 +36,8 @@ const HeroSection = () => {
         <img
           src={fotoPortafolio5}
           alt="Foto de perfil"
-          className="rounded-full overflow-hidden h-[35vh] w-[35vh] md:h-[40vh] md:w-[40vh] lg:h-[45vh] lg:w-[45vh] border-4 border-orange-700 border-opacity-90 shadow-[0px_0px_20px_10px_rgba(234,88,12,0.6)] object-cover"
-          style={{ imageRendering: 'crisp-edges', objectFit: 'cover' }} // Mejorar la calidad visual
+          className="rounded-full overflow-hidden h-[35vh] w-[35vh] md:h-[40vh] md:w-[40vh] lg:h-[45vh] lg:w-[45vh] border-4 border-orange-700 border-opacity-90 shadow-[0px_0px_20px_10px_rgba(234,88,12,0.6)]"
+
         />
       </div>
     </section>

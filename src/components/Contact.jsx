@@ -7,7 +7,7 @@ const Contact = () => {
     message: '',
   });
 
-  const [status, setStatus] = useState(null); // Para manejar el estado del envío
+  const [status, setStatus] = useState(null); //manejar el estado del envío
 
   const handleChange = (e) => {
     setFormState({

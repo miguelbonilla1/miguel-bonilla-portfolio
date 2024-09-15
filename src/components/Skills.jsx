@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJsSquare, faReact, faBootstrap } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
-import { DiNodejs } from "react-icons/di"; // Import the Node.js icon
+import { DiNodejs } from "react-icons/di";
 import { SiNestjs } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";

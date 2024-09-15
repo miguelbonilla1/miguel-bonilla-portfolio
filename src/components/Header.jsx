@@ -29,7 +29,7 @@ const Header = () => {
           />
         </ScrollLink>
 
-        {/* Menú en pantallas grandes */}
+        {/* Menú Lg resolutions */}
         <div className="hidden md:flex items-center space-x-6 pr-5 text-lg py-1">
           <ScrollLink to="HeroSection" smooth={true} duration={500} className="cursor-pointer text-white transition-transform transform hover:scale-105 lg:pr-3">
             Home
@@ -43,7 +43,8 @@ const Header = () => {
           <ScrollLink to="contact" smooth={true} duration={500} className="cursor-pointer text-white transition-transform transform hover:scale-105 lg:pr-3">
             Contact
           </ScrollLink>
-          {/* Ajustamos el texto para diferentes resoluciones */}
+
+          {/* */}
           <a
             href="/ResumeMiguelBonilla.docx"
             download="CV_MiguelBonilla"
@@ -57,7 +58,7 @@ const Header = () => {
           </a>
         </div>
 
-        {/* Botón del menú hamburguesa en pantallas pequeñas */}
+        {/* Nav hamburguer sm resolutions*/}
         <button
           className="pr-2 md:hidden text-white dark:text-white hover:text-white transition duration-300"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -66,7 +67,7 @@ const Header = () => {
           <FontAwesomeIcon icon={faBars} />
         </button>
 
-        {/* Menú móvil */}
+        {/* Menu phone */}
         <div
           className={`${isMenuOpen ? 'flex' : 'hidden'} absolute top-14 right-0 left-0 mx-3 md:hidden transition-transform duration-300 ease-in-out transform ${isMenuOpen ? 'scale-100' : 'scale-95'}`}
         >
@@ -113,7 +114,7 @@ const Header = () => {
             >
               Contact
             </ScrollLink>
-            {/* Opción de "Download My Resume" en el menú móvil */}
+            {/* Download Resume sm resolution */}
             <a
               href="/CurriculoDevEspañol.docx"
               download="Miguel_Bonilla_CV"
