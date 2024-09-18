@@ -116,7 +116,7 @@ const Header = () => {
             </ScrollLink>
             {/* Download Resume sm resolution */}
             <a
-              href="/CurriculoDevEspañol.docx"
+              href="/ResumeMiguelBonilla.docx"
               download="Miguel_Bonilla_CV"
               target="_blank"
               rel="noopener noreferrer"
