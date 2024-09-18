@@ -25,7 +25,7 @@ const Projects = () => {
       description: 'DarkShape Studios is a music production company. The website was developed using React, Tailwind CSS, and Vite.js.',
     },
     {
-      name: 'Bot asistente de discord',
+      name: 'Discord Bot',
       url: 'https://discord.gg/SCbZaDek',
       imageUrl: dcapp,
       description: 'The Discord Bot provides real-time cryptocurrency quotes, using Discord.js, Node.js, and the CoinMarketCap API.',
