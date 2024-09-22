@@ -2,6 +2,9 @@
 
 import { useState } from 'react';
 
+
+
+
 const Contact = () => {
   const [formState, setFormState] = useState({
     name: '',
@@ -22,7 +25,8 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/send-email`, {
+      console.log('API URL:', import.meta.env.VITE_API_URL);
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
