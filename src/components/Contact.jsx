@@ -1,3 +1,5 @@
+
+
 import { useState } from 'react';
 
 const Contact = () => {
@@ -20,7 +22,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://www.miguelbonilla.tech/send-email', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
