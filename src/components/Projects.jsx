@@ -26,7 +26,7 @@ const Projects = () => {
     },
     {
       name: 'Discord Bot',
-      url: 'https://discord.gg/SCbZaDek',
+      url: 'https://discord.gg/ptVHVVtn',
       imageUrl: dcapp,
       description: 'The Discord Bot provides real-time cryptocurrency quotes, using Discord.js, Node.js, and the CoinMarketCap API.',
       gifUrl: dcappGif,
