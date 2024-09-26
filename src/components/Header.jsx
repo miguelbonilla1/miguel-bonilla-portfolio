@@ -46,7 +46,7 @@ const Header = () => {
 
           {/* */}
           <a
-            href="/ResumeMiguelBonilla.docx"
+            href="/ResumeMiguelBonilla.pdf"
             download="CV_MiguelBonilla"
             target="_blank"
             rel="noopener noreferrer"
